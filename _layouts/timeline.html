@@ -1,8 +1,9 @@
 ---
-# "Timeline" page
-layout: page
 custom-foot: js/timeline-js.html
+layout: page
 ---
+
+<!-- cb: _layouts/timeline.html -->
 {%- assign field = site.data.theme.timeline-field | default: page.timeline-field | default: "date" -%}
 {% if site.data.theme.timeline-child-objects == true %}
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
@@ -72,3 +73,4 @@ custom-foot: js/timeline-js.html
         {% endfor %}
     </tbody>
 </table>
+<!-- /cb: _layouts/timeline.html -->

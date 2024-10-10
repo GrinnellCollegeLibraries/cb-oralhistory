@@ -1,9 +1,11 @@
 ---
-# default "About" page layout
 layout: default
 ---
+
+<!-- cb: _layouts/about.html -->
 <div class="container my-4 about-contents">
 {{ content }}
 </div>
 
 {% if page.credits == true %}{% include cb/credits.html %}{% endif %}
+<!-- /cb: _layouts/about.html -->

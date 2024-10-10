@@ -1,9 +1,9 @@
 ---
-# generic fallback item page layout
-# displays image or icon depending on "image_thumb"
-layout: item/item-page-base
 custom-foot: transcript/js/transcript-js.html
+layout: item/item-page-base
 ---
+
+<!-- cb: _layouts/item/transcript.html -->
 {%- comment -%} Determine if transcript filename is the objectid of the item or if it is determined by the metadata's object-transcript field {%- endcomment -%}
 {% if page.object-transcript contains ".csv"%}
 {% assign transcript = page.object-transcript | remove: ".csv" %}
@@ -57,5 +57,4 @@ endcapture -%}
 </div>
 
 {% include transcript/item/transcript.html %}
-  
- 
+<!-- /cb: _layouts/item/transcript.html -->

@@ -1,7 +1,8 @@
 ---
-# Default home page with boxes providing collection stats
 layout: page
 ---
+
+<!-- cb: _layouts/home-infographic.html -->
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
 <div class="row">
 
@@ -29,3 +30,4 @@ layout: page
   </div>
 
 </div>
+<!-- /cb: _layouts/home-infographic.html -->

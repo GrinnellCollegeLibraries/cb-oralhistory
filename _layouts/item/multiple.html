@@ -1,9 +1,9 @@
 ---
-# layout for "multiple" display template
-# creates large images with a gallery feature
-layout: item/item-page-base
 gallery: true
+layout: item/item-page-base
 ---
+
+<!-- cb: _layouts/item/multiple.html -->
 {% assign children = site.data[site.metadata] | where_exp: 'item','item.parentid == page.objectid' %}
 
 <div class="mb-4 text-center">
@@ -24,3 +24,4 @@ gallery: true
     </div>
 
 </div>
+<!-- /cb: _layouts/item/multiple.html -->

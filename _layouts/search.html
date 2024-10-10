@@ -1,8 +1,9 @@
 ---
-# Lunr search page
-layout: page 
 custom-foot: js/lunr-js.html
+layout: page
 ---
+
+<!-- cb: _layouts/search.html -->
 {%- assign fields = site.data.config-search | where: 'index',true | map: 'field' -%}
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-outline-primary float-end" data-bs-toggle="modal" data-bs-target="#operators">Search Options</button>
@@ -45,3 +46,4 @@ custom-foot: js/lunr-js.html
 <div class="mt-3">
     <p class="text-muted">Fuzzy search powered by <a href="https://lunrjs.com/" target="_blank" rel="noopener">Lunr.js</a>. <em>May take a second to load large collections!</em></p>
 </div>
+<!-- /cb: _layouts/search.html -->
